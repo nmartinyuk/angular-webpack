@@ -3,7 +3,14 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    {{2 + 2}}
+    <div ng-controller="mainController">
+        <input ng-model="name" placeholder="Enter your name">
+        <button ng-click="onClick()">Click</button>
+    </div>
+    <div ng-controller="idleController">
+        Idle: <span ng-bind="countdown"></span>
+        <button ng-click="onClick()">Click</button>
+    </div>
     <script src="bundle.js"></script>
 </body>
 </html>
